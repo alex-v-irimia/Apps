@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="/assets/notepad.css">
+<div class="notepad">
+  <label for="fontSize">Font Size : </label>
+  <input type="number" min="10" max="100" value="30" name="fontSize" ng-model="font_size">
+  <label for="fontFamily">Font : </label>
+  <select name="fontFamily" ng-model="font_family">
+    <option ng-repeat="font in fonts" value="{{font.value}}">{{font.name}}</option>
+  </select><br>
+  <textarea style="font-size:{{font_size}}px;font-family:{{font_family}}" type="text" rows="100" ng-model="data"></textarea>
+</div>

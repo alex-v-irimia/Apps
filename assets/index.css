@@ -1,0 +1,41 @@
+body{
+  width:100%;
+}
+
+div.header{
+  width: 100%;
+  position: relative;
+  left:0;
+  background-color: red;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+div.header span{
+  font-size: 50px;
+}
+
+div.links{
+  display: inline;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 30px;
+}
+
+div.header a{
+  position: relative;
+  bottom: 0;
+  margin: 0;
+  margin-right:15px;
+  color: black;
+}
+
+main.ng-enter{
+  transition: 0.2s linear all;
+  opacity: 0;
+}
+
+main.ng-enter-active{
+  opacity: 1;
+}

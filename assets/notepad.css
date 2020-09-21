@@ -1,0 +1,20 @@
+div.notepad textarea{
+  width: 90%;
+  resize: none;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+div.notepad label{
+  font-size: 20px;
+}
+
+div.notepad input{
+  font-size: 20px;
+  margin: 10px;
+}
+
+div.notepad select{
+  font-size: 20px;
+  margin: 10px;
+}

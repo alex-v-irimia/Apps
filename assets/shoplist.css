@@ -1,0 +1,103 @@
+.shop{
+  overflow: hidden;
+  font-size: 20px;
+  width: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(70,70,70,0.2);
+  border-radius: 20px;
+}
+
+.shop form{
+  text-align: center;
+}
+
+.shop ul{
+    font-size: 25px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align:left;
+    list-style-type:circle;
+    list-style-position: inside;
+    width: 30%;
+}
+
+.shop ul li{
+  border-bottom: 1px solid black;
+  word-wrap: break-word;
+}
+
+.shop .remove{
+  float: right;
+  color: red;
+}
+
+.shop .remove:hover{
+  cursor: pointer;
+}
+
+.shop form input{
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: 20px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.shop form input[type="text"].ng-invalid.ng-touched{
+  border-color: red;
+  border-width: 5px;
+}
+
+.invalid{
+  color: red;
+}
+
+.shop input[disabled="disabled"]{
+  cursor: not-allowed;
+}
+
+.shop label{
+  font-weight:bold;
+}
+
+.shop header{
+  font-size: 40px;
+  text-align: center;
+  margin: 15px;
+  font-weight: bolder;
+}
+
+.shop img{
+  width: 7%;
+  height: 7%;
+}
+
+.item.ng-enter{
+  transition: 0.2s linear all;
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.item.ng-enter-active{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.item.ng-leave{
+  transition: 0.2s linear all;
+  opacity:1;
+  transform: translateX(0);
+}
+
+.item.ng-leave-active{
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.item.ng-leave-stagger{
+  transition-delay: 0.1s;
+  transition-duration: 0;
+}

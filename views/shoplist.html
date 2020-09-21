@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/assets/shoplist.css">
+<div class="shop">
+  <header>Shopping List <img src="/assets/cart.png" alt=""></header>
+  <form name="add" ng-submit="addItem()" method="post">
+    <label for="toAdd">Enter new item : </label>
+    <input type="text" name="toAdd" placeholder="item..." ng-model="newItem" required>
+    <input type="submit" value="Add" ng-disabled="add.$invalid">
+    <input type="button" value="removeAll" ng-disabled="items.length==0" ng-click="removeAll()"><br>
+    <p ng-show="duplicate" class="invalid">Cant add the same element twice!</p>
+  </form>
+  <ul>
+    <li ng-repeat="item in items" class="item">
+        <span>{{item}}</span>
+        <span class="remove" ng-click="removeItem(item)" title="Remove item">X</span>
+    </li>
+    <li style="border:none" ng-show="items.length==0">No items...</li>
+  </ul>
+</div>

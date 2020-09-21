@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.min.js"></script>
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/home.js"></script>
+    <script src="/scripts/notepad.js"></script>
+    <script src="/scripts/shoplist.js"></script>
+    <link rel="stylesheet" href="/assets/index.css">
+    <title>Apps</title>
+  </head>
+  <body>
+    <div ng-app="app">
+      <header ng-include="'header.html'"></header>
+      <main ng-view></main>
+    </div>
+  </body>
+</html>
